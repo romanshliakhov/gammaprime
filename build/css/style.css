@@ -2,44 +2,51 @@
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "Red Hat Display";
+  font-family: "AvenirNext";
   font-display: swap;
-  src: url("../fonts/RedHatDisplay-Regular.woff2") format("woff2"), url("../fonts/RedHatDisplay-Regular.woff") format("woff");
+  src: url("../fonts/AvenirNext-Regular.woff2") format("woff2"), url("../fonts/AvenirNext-Regular.woff") format("woff");
 }
 @font-face {
   font-style: normal;
   font-weight: 500;
-  font-family: "Red Hat Display";
+  font-family: "AvenirNext";
   font-display: swap;
-  src: url("../fonts/RedHatDisplay-Medium.woff2") format("woff2"), url("../fonts/RedHatDisplay-Medium.woff") format("woff");
+  src: url("../fonts/AvenirNext-Medium.woff2") format("woff2"), url("../fonts/AvenirNext-Medium.woff") format("woff");
 }
 @font-face {
   font-style: normal;
   font-weight: 600;
-  font-family: "Red Hat Display";
+  font-family: "AvenirNext";
   font-display: swap;
-  src: url("../fonts/RedHatDisplay-SemiBold.woff2") format("woff2"), url("../fonts/RedHatDisplay-SemiBold.woff") format("woff");
+  src: url("../fonts/AvenirNext-SemiBold.woff2") format("woff2"), url("../fonts/AvenirNext-SemiBold.woff") format("woff");
 }
 @font-face {
   font-style: normal;
   font-weight: 700;
-  font-family: "Red Hat Display";
+  font-family: "AvenirNext";
   font-display: swap;
-  src: url("../fonts/RedHatDisplay-Bold.woff2") format("woff2"), url("../fonts/RedHatDisplay-Bold.woff") format("woff");
-}
-@font-face {
-  font-style: normal;
-  font-weight: 800;
-  font-family: "Red Hat Display";
-  font-display: swap;
-  src: url("../fonts/RedHatDisplay-ExtraBold.woff2") format("woff2"), url("../fonts/RedHatDisplay-ExtraBold.woff") format("woff");
+  src: url("../fonts/AvenirNext-Bold.woff2") format("woff2"), url("../fonts/AvenirNext-Bold.woff") format("woff");
 }
 @font-face {
   font-style: normal;
   font-weight: 900;
-  font-family: "Red Hat Display";
+  font-family: "AvenirNext";
   font-display: swap;
-  src: url("../fonts/RedHatDisplay-Black.woff2") format("woff2"), url("../fonts/RedHatDisplay-Black.woff") format("woff");
+  src: url("../fonts/AvenirNext-Black.woff2") format("woff2"), url("../fonts/AvenirNext-Black.woff") format("woff");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "DMSans";
+  font-display: swap;
+  src: url("../fonts/DMSans-Regular.woff2") format("woff2"), url("../fonts/DMSans-Regular.woff") format("woff");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Inter";
+  font-display: swap;
+  src: url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff");
 }
 /* stylelint-disable */
 /* stylelint-disable */
@@ -51,7 +58,9 @@
   --container-offset: clamp(16px, 5.242vw, 65px);
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
   --header-height: 118px;
-  --font-family: "Red Hat Display", sans-serif;
+  --font-family: "AvenirNext", sans-serif;
+  --font-dmsans: "DMSans", sans-serif;
+  --font-inter: "Inter", sans-serif;
   --cl-a: #ffffff;
   --cl-b: #000000;
   --cl-c: #F0F1E7;
@@ -76,175 +85,6 @@
 }
 .logo svg, .logo img {
   height: auto;
-}
-
-.product__accordion-info {
-  width: 100%;
-}
-.product__accordion-info h1 {
-  margin-bottom: 20px;
-  font-family: var(--font-family);
-  font-size: clamp(20px, 6.944vw, 40px);
-  line-height: 130%;
-  color: var(--cl-b);
-  font-weight: 700;
-}
-.product__accordion-info h2 {
-  margin: 20px 0;
-  font-family: var(--font-family);
-  font-size: clamp(20px, 6.25vw, 36px);
-  line-height: 130%;
-  color: var(--cl-b);
-  font-weight: 700;
-}
-.product__accordion-info h3 {
-  margin: 20px 0;
-  font-family: var(--font-family);
-  font-size: clamp(18px, 5.556vw, 32px);
-  line-height: 130%;
-  color: var(--cl-b);
-  font-weight: 700;
-}
-.product__accordion-info h4 {
-  margin: 20px 0;
-  font-family: var(--font-family);
-  font-size: clamp(17px, 4.861vw, 28px);
-  line-height: 130%;
-  color: var(--cl-b);
-  font-weight: 700;
-}
-.product__accordion-info h5 {
-  margin: 20px 0;
-  font-family: var(--font-family);
-  font-size: clamp(16px, 4.167vw, 24px);
-  line-height: 130%;
-  color: var(--cl-b);
-  font-weight: 700;
-}
-.product__accordion-info h6 {
-  margin: 20px 0;
-  font-family: var(--font-family);
-  font-size: clamp(16px, 3.472vw, 20px);
-  line-height: 130%;
-  color: var(--cl-b);
-  font-weight: 700;
-}
-.product__accordion-info p {
-  margin-bottom: 15px;
-  font-family: var(--font-family);
-  font-size: clamp(14px, 2.778vw, 16px);
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
-  color: var(--cl-b);
-}
-.product__accordion-info p + p {
-  margin-top: 10px;
-}
-.product__accordion-info blockquote {
-  margin: 15px 0;
-  border-left: 0;
-  font-family: var(--font-family);
-  font-size: clamp(16px, 3.125vw, 18px);
-  font-weight: 300;
-  line-height: 130%;
-  color: var(--cl-c);
-}
-.product__accordion-info strong, .product__accordion-info b {
-  font-family: var(--font-family);
-  font-size: clamp(14px, 2.778vw, 16px);
-  line-height: 130%;
-  font-weight: 700;
-  color: var(--cl-c);
-}
-.product__accordion-info em, .product__accordion-info i {
-  font-family: var(--font-family);
-  font-size: clamp(14px, 2.778vw, 16px);
-  line-height: 130%;
-  font-weight: 300;
-  color: var(--cl-c);
-}
-.product__accordion-info u {
-  font-family: var(--font-family);
-  font-size: clamp(14px, 2.778vw, 16px);
-  line-height: 130%;
-  color: var(--cl-c);
-}
-.product__accordion-info a {
-  font-family: var(--font-family);
-  font-size: clamp(14px, 2.778vw, 16px);
-  line-height: 130%;
-  color: var(--cl-c);
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
-  word-wrap: break-word;
-}
-.product__accordion-info a:hover {
-  color: var(--cl-d);
-}
-.product__accordion-info ul, .product__accordion-info ol {
-  margin: 20px 0;
-}
-.product__accordion-info ul li, .product__accordion-info ol li {
-  list-style-position: inside;
-  font-family: var(--font-family);
-  font-size: clamp(14px, 2.778vw, 16px);
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
-  color: var(--cl-b);
-}
-.product__accordion-info ul li p, .product__accordion-info ol li p {
-  display: inline;
-}
-.product__accordion-info ul li + li, .product__accordion-info ol li + li {
-  margin-top: 10px;
-}
-.product__accordion-info ul li::marker,
-.product__accordion-info ol li::marker {
-  color: var(--cl-c);
-}
-.product__accordion-info ul li {
-  list-style-type: disc;
-}
-.product__accordion-info ul ul,
-.product__accordion-info ul ol {
-  margin: 15px 0 15px 15px;
-}
-.product__accordion-info ul ul li + li,
-.product__accordion-info ul ol li + li {
-  margin-top: 10px;
-}
-.product__accordion-info ol ul,
-.product__accordion-info ol ol {
-  margin: 15px 0 15px 15px;
-}
-.product__accordion-info ol ul li + li,
-.product__accordion-info ol ol li + li {
-  margin-top: 10px;
-}
-.product__accordion-info ol li {
-  list-style-type: decimal;
-}
-.product__accordion-info table {
-  margin: 20px 0;
-  font-family: var(--font-family);
-  font-size: clamp(14px, 2.778vw, 16px);
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
-  color: var(--cl-b);
-  border-spacing: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border: 1px solid var(--br-a);
-}
-.product__accordion-info thead th {
-  background-color: var(--bg-g);
-  border: 1px solid var(--br-a);
-}
-.product__accordion-info tbody td {
-  border: 1px solid var(--br-a);
 }
 
 @font-face {
@@ -412,7 +252,8 @@
 }
 
 :root {
-  --mini-cart: url("data:image/svg+xml,%3Csvg width='508' height='466' viewBox='0 0 508 466' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d_168_2223)'%3E%3Cpath d='M15 34.7236C15 30.8576 18.134 27.7235 22 27.7235H230.891L247.512 14.2365C249.885 12.3103 253.234 12.1472 255.784 13.8336L276.784 27.7235H481C484.866 27.7235 488 30.8576 488 34.7235V437C488 440.866 484.866 444 481 444H22C18.134 444 15 440.866 15 437V34.7236Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_168_2223' x='-5' y='-5.328' width='513' height='471.328' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='2'/%3E%3CfeGaussianBlur stdDeviation='10'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_168_2223'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_168_2223' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
+  --left-decor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='429' height='1037' viewBox='0 0 429 1037' fill='none'%3E%3Cg filter='url(%23filter0_f_32_100)'%3E%3Cpath d='M218 211H0V826H218L142.5 528.5L218 211Z' fill='%2339CA88' fill-opacity='0.28'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_f_32_100' x='-210.5' y='0.5' width='639' height='1036' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='105.25' result='effect1_foregroundBlur_32_100'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");
+  --right-decor: url("data:image/svg+xml,%3Csvg width='429' height='1037' viewBox='0 0 429 1037' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_f_32_101)'%3E%3Cpath d='M211 211H429V826H211L286.5 528.5L211 211Z' fill='%2339CA88' fill-opacity='0.28'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_f_32_101' x='0.5' y='0.5' width='639' height='1036' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='105.25' result='effect1_foregroundBlur_32_101'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
 }
 
 .select {
@@ -1062,6 +903,7 @@ select:-webkit-autofill:focus {
 }
 
 .article-card {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1091,13 +933,26 @@ select:-webkit-autofill:focus {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   gap: clamp(15px, 2.148vw, 22px);
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 .article-card__title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-size: 24px;
   line-height: 133%;
   font-weight: 700;
   color: var(--cl-a);
+  background: radial-gradient(100% 65% at 50% 50%, #FFF 30%, rgba(255, 255, 255, 0.4) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .article-card__except {
   font-size: 20px;
@@ -1189,6 +1044,9 @@ select:-webkit-autofill:focus {
   z-index: 100;
 }
 .header__box {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1229,12 +1087,14 @@ select:-webkit-autofill:focus {
     -ms-flex-align: center;
     align-items: center;
     gap: 8px;
+    font-family: var(--font-dmsans);
     font-size: 16px;
     line-height: 100%;
     font-weight: 400;
     color: var(--cl-a);
   }
   .header__menu a i {
+    font-family: var(--font-dmsans);
     font-size: 12px;
     line-height: 100%;
     font-style: normal;
@@ -1250,6 +1110,7 @@ select:-webkit-autofill:focus {
     flex-direction: column;
   }
   .header__menu a {
+    font-family: var(--font-dmsans);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1263,6 +1124,7 @@ select:-webkit-autofill:focus {
     color: var(--cl-a);
   }
   .header__menu a i {
+    font-family: var(--font-dmsans);
     font-size: 20px;
     line-height: 100%;
     font-style: normal;
@@ -1275,10 +1137,14 @@ select:-webkit-autofill:focus {
 }
 @media (min-width: 768px) {
   .header__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     padding: 11px 24px;
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.05);
     background-color: rgba(57, 202, 136, 0.9);
+    font-family: var(--font-inter);
     font-size: 14px;
     line-height: 142%;
     font-weight: 500;
@@ -1421,6 +1287,8 @@ select:-webkit-autofill:focus {
 @media (min-width: 1025px) {
   .mobile {
     display: contents;
+    opacity: 1;
+    visibility: visible;
   }
 }
 .mobile.active {
@@ -1757,10 +1625,17 @@ select:-webkit-autofill:focus {
   }
 }
 .article__title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-size: clamp(24px, 3.516vw, 36px);
   line-height: 133%;
   font-weight: 700;
   color: var(--cl-a);
+  background: radial-gradient(100% 65% at 50% 50%, #FFF 30%, rgba(255, 255, 255, 0.4) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .article__btn {
   width: -webkit-fit-content;
@@ -1770,6 +1645,7 @@ select:-webkit-autofill:focus {
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.05);
   background-color: rgba(57, 202, 136, 0.9);
+  font-family: var(--font-inter);
   font-size: 14px;
   line-height: 142%;
   font-weight: 500;
@@ -1902,10 +1778,18 @@ select:-webkit-autofill:focus {
   gap: clamp(20px, 2.246vw, 23px);
   color: var(--cl-a);
 }
+.article__content h1,
 .article__content h2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-size: 28px;
   line-height: 114%;
   font-weight: 700;
+  background: radial-gradient(100% 65% at 50% 50%, #FFF 30%, rgba(255, 255, 255, 0.4) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .article__content h3 {
   font-size: 24px;

@@ -26,6 +26,7 @@
     }
 
     &__box {
+        flex-grow: 1;
         display: flex;
         align-items: center;
         gap: 50px;
@@ -48,12 +49,14 @@
                 display: flex;
                 align-items: center;
                 gap: 8px;
+                font-family: var(--font-dmsans);
                 font-size: 16px;
                 line-height: 100%;
                 font-weight: 400;
                 color:  var(--cl-a);
     
                 i {
+                    font-family: var(--font-dmsans);
                     font-size: 12px;
                     line-height: 100%;
                     font-style: normal;
@@ -67,6 +70,7 @@
             flex-direction: column;
 
             a {
+                font-family: var(--font-dmsans);
                 display: flex;
                 align-items: center;
                 gap: 8px;
@@ -76,6 +80,7 @@
                 color:  var(--cl-a);
     
                 i {
+                    font-family: var(--font-dmsans);
                     font-size: 20px;
                     line-height: 100%;
                     font-style: normal;
@@ -89,11 +94,13 @@
     &__btn {
         display: none;
 
-        @include for-small-tablet {  
+        @include for-small-tablet { 
+            display: flex; 
             padding: 11px 24px;
             border-radius: 8px;
             border: 1px solid rgba(255, 255, 255, 0.05);
             background-color: rgba(57, 202, 136, 0.90);
+            font-family: var(--font-inter);
             font-size: 14px;
             line-height: 142%;
             font-weight: 500;

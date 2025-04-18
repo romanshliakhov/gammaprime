@@ -17,6 +17,8 @@
 
   @include for-tablet {
     display: contents;
+    opacity: 1;
+    visibility: visible;
   }
 
   &.active {
