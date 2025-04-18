@@ -1,5 +1,32 @@
 .all-section {
     padding: clamp(30px, 6.836vw, 70px) 0 70px;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-image: var(--left-decor);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 1037px;
+        width: 429px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-image: var(--right-decor);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 1037px;
+        width: 429px;
+    }
 
     &__wrapp {
         display: flex;

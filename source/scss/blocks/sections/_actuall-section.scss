@@ -1,5 +1,34 @@
 .actuall-section {
     padding: clamp(15px, 4.861vw, 70px) 0;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        background-image: var(--left-actuall);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 609px;
+        width: 429px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        background-image: var(--right-actuall);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 609px;
+        width: 429px;
+    }
 
     &__wrapp {
         .article-card {

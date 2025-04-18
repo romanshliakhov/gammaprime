@@ -1,5 +1,32 @@
 .latest-section {
     padding: clamp(15px, 6.836vw, 70px) 0 70px;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: var(--left-latest);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 822px;
+        width: 429px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-image: var(--right-latest);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 822px;
+        width: 429px;
+    }
 
     &__wrapp {
         display: flex;
