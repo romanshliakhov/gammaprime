@@ -1,12 +1,13 @@
 /* stylelint-disable */
 
 @mixin burger {
-  --burger-width: 22px;
-  --burger-height: 34px;
-  --burger-line-height: 2px;
+  --burger-width: 26px;
+  --burger-height: 32px;
+  --burger-line-height: 1px;
   --border-radius: 0;
 
   position: relative;
+  z-index: 100;
   border: none;
   width: var(--burger-width);
   height: var(--burger-height);
@@ -22,7 +23,7 @@
     left: 50%;
     transform: translateX(-50%);
     height: var(--burger-line-height);
-    background: #1C1B1F;
+    background: var(--bg-a);
     transform-origin: left top;
     transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, opacity .5s, background 0.3s ease-in-out;
     border-radius: var(--border-radius);
@@ -42,7 +43,7 @@
     top: 50%;
     width: 100%;
     height: var(--burger-line-height);
-    background: #1C1B1F;
+    background: var(--bg-a);
     transform: translate(-50%,-50%);
     transition: transform 0.3s ease-in-out, opacity .5s, background 0.3s ease-in-out;
     border-radius: var(--border-radius);
@@ -54,21 +55,21 @@
 
   &.active {
     &::before {
-      background: #1C1B1F;
+      background: var(--bg-a);
       top: 50%;
       transform: rotate(45deg) translate(-50%, -50%);
       transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
     }
 
     &::after {
-      background: #1C1B1F;
+      background: var(--bg-a);
       top: 50%;
       transform: rotate(-45deg) translate(-50%, -50%);
       transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
     }
 
     .burger__line {
-      background: #1C1B1F;
+      background: var(--bg-a);
       transform: scale(0);
       transition: transform 0.3s ease-in-out;
     }

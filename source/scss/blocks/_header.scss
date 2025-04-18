@@ -11,15 +11,24 @@
     }
 
     &__wrapp {
-        padding: 35px 0 42px;
+        padding: clamp(12px, 2.823vw, 35px) 0 clamp(12px, 3.387vw, 42px);
         border-bottom: 1px solid var(--br-a);
+
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        position: relative;
+        z-index: 100;
     }
 
     &__box {
         display: flex;
         align-items: center;
-        gap: 15px;
-        justify-content: space-between;
+        gap: 50px;
     }
 
     &__nav {
@@ -34,41 +43,69 @@
         align-items: center;
         gap: 50px;
 
-        a {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 16px;
-            line-height: 100%;
-            font-weight: 400;
-            color:  var(--cl-a);
-
-            i {
-                font-size: 12px;
+        @include for-tablet {    
+            a {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 16px;
                 line-height: 100%;
-                font-style: normal;
                 font-weight: 400;
-                letter-spacing: -0.36px;
+                color:  var(--cl-a);
+    
+                i {
+                    font-size: 12px;
+                    line-height: 100%;
+                    font-style: normal;
+                    font-weight: 400;
+                    letter-spacing: -0.36px;
+                }
+            }
+        }
+
+        @include tablet {
+            flex-direction: column;
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 32px;
+                line-height: 100%;
+                font-weight: 700;
+                color:  var(--cl-a);
+    
+                i {
+                    font-size: 20px;
+                    line-height: 100%;
+                    font-style: normal;
+                    font-weight: 400;
+                    letter-spacing: -0.36px;
+                }
             }
         }
     }
 
     &__btn {
-        padding: 11px 24px;
-        border-radius: 8px;
-        border: 1px solid rgba(255, 255, 255, 0.05);
-        background-color: rgba(57, 202, 136, 0.90);
-        font-size: 14px;
-        line-height: 142%;
-        font-weight: 500;
-        color: var(--cl-a);
-        letter-spacing: 0.2px;
-        transition: all 0.3s ease;
+        display: none;
 
-        &:hover,
-        &:active {
-            background-color: var(--bg-a);
-            color: var(--cl-b);
+        @include for-small-tablet {  
+            padding: 11px 24px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            background-color: rgba(57, 202, 136, 0.90);
+            font-size: 14px;
+            line-height: 142%;
+            font-weight: 500;
+            color: var(--cl-a);
+            letter-spacing: 0.2px;
+            transition: all 0.3s ease;
+    
+            &:hover,
+            &:active {
+                background-color: var(--bg-a);
+                color: var(--cl-b);
+            }
         }
     }
 

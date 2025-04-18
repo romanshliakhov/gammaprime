@@ -10,9 +10,9 @@
     // --------------- default JS variables ---------------
     --header-height: 118px;
  
-    // @include tablet {
-    //   --header-height: 74px;
-    // }
+    @include tablet {
+      --header-height: 92px;
+    }
 
   // --------------- default font-family variables ---------------
   --font-family: "Red Hat Display", sans-serif; // var(--font-family);
