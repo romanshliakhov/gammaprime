@@ -1,14 +1,14 @@
 .all-section {
-    padding: 70px 0;
+    padding: clamp(30px, 6.836vw, 70px) 0 70px;
 
     &__wrapp {
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: clamp(10px, 4.297vw, 44px);
     }
 
     &__title {
-        font-size: 32px;
+        font-size: clamp(24px, 3.125vw, 32px);
         line-height: 140%;
         font-weight: 500;
         color: var(--cl-d);
@@ -16,7 +16,16 @@
 
     &__items {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 40px 45px;
+        gap: 40px clamp(30px, 4.032vw, 50px);
+
+        @include for-tablet {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include tablet {
+            @include for-small-tablet {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
     }
 }

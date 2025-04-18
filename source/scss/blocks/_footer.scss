@@ -1,22 +1,27 @@
 .footer {
-    padding: 74px 0;
+    padding: clamp(28px, 7.227vw, 74px) 0 clamp(52px, 7.227vw, 74px);
 
     &__wrapp {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        gap: 24px;
+
+        @include small-tablet {
+            flex-direction: column;
+        }
     }
 
     &__left {
         display: flex;
         flex-direction: column;
-        gap: 52px;
+        gap: clamp(36px, 5.078vw, 52px);
     }
 
     &__menu {
         display: flex;
         align-items: center;
-        gap: 50px;
+        gap: clamp(36px, 4.883vw, 50px);
 
         a {
             font-size: 16px;
@@ -29,8 +34,11 @@
     &__right {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
-        gap: 52px;
+        gap: clamp(43px, 5.078vw, 52px);
+
+        @include for-small-tablet {
+            align-items: flex-end;
+        }
     }
 
     &__contacts {
@@ -42,7 +50,7 @@
             display: flex;
             align-items: center;
             gap: 15px;
-            font-size: 18px;
+            font-size: clamp(16px, 1.758vw, 18px);
             line-height: 100%;
             font-weight: 400;
             color: var(--cl-c);

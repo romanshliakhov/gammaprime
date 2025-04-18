@@ -1,6 +1,6 @@
 .tags-block {
     &__wrapp {
-        padding: 22px 0;
+        padding: clamp(20px, 2.148vw, 22px) 0;
         border-bottom: 1px solid var(--br-a);
         display: flex;
         align-items: center;
@@ -10,13 +10,13 @@
     &__nav {
         display: flex;
         align-items: center;
-        gap: 50px;
+        gap: clamp(20px, 4.883vw, 50px);
 
         a {
             display: flex;
             align-items: center;
-            gap: 12px;
-            font-size: 14px;
+            gap: clamp(7px, 1.172vw, 12px);
+            font-size: clamp(8px, 1.367vw, 14px);
             line-height: 142%;
             font-weight: 500;
             color: var(--cl-a);
@@ -24,21 +24,34 @@
             letter-spacing: 0.56px;
 
             svg {
+                width: clamp(20px, 2.93vw, 30px);
+                height: clamp(20px, 2.93vw, 30px);
                 fill: transparent;
             }
         }
     }
 
     &__socials {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-
-        a {
+        display: none;
+        
+        @include for-small-tablet{
             display: flex;
-
-            svg {
-                fill: transparent;
+            align-items: center;
+            gap: clamp(10px, 1.29vw, 16px);
+    
+            a {
+                display: flex;
+                transition: all 0.3s ease;
+    
+                svg {
+                    fill: transparent;
+                }
+    
+                &:hover {
+                    svg {
+                        transform: scale(1.1);
+                    }
+                }
             }
         }
     }

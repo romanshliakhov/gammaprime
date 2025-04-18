@@ -17,7 +17,7 @@
     &__box {
         display: flex;
         flex-direction: column;
-        gap: 22px;
+        gap: clamp(15px, 2.148vw, 22px);
     }
 
     &__title {
@@ -61,5 +61,18 @@
         line-height: 150%;
         font-weight: 400;
         color: var(--cl-a);
+
+        p:not(:first-of-type) {
+            position: relative;
+
+            &::before {
+                content: '•';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -13px;
+                color: var(--cl-a);
+            }
+        }
     }
 }
