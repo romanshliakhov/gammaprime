@@ -155,6 +155,16 @@ textarea {
   resize: none;
 }
 
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  margin: 21px auto 0;
+  text-align: center;
+}
+
 fieldset {
   margin: 0;
   padding: 0;
@@ -262,6 +272,7 @@ select:-webkit-autofill:focus {
     box-shadow: none;
   }
 }
+
 
 
 

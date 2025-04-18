@@ -1,0 +1,107 @@
+.article {
+    padding: 70px 0;
+
+    &__top {
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__title {
+        font-size: 36px;
+        line-height: 133%;
+        font-weight: 700;
+        color: var(--cl-a);
+    }
+
+    &__btn {
+        padding: 11px 24px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        background-color: rgba(57, 202, 136, 0.90);
+        font-size: 14px;
+        line-height: 142%;
+        font-weight: 500;
+        color: var(--cl-a);
+        letter-spacing: 0.2px;
+        transition: all 0.3s ease;
+
+        &:hover,
+        &:active {
+            background-color: var(--bg-a);
+            color: var(--cl-b);
+        }
+    }
+
+    &__box {
+        padding: 24px 0 55px;
+        display: grid;
+        grid-template-columns: 388px 1fr;
+        align-items: flex-start;
+        gap: 24px 45px;
+        border-bottom: 1px solid var(--br-a);
+    }
+
+    &__divider {
+        grid-column: 1 / -1;
+        padding: 13.5px 21px;
+        border-top: 1px solid #F2F2F2;
+        border-bottom: 1px solid #F2F2F2;
+    }
+
+    &__likes {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        font-size: 12px;
+        line-height: 100%;
+        font-weight: 500;
+        color: var(--cl-d);
+    }
+
+    &__thumbnails {
+        grid-column: 1 / -1;
+        display: flex;
+        margin-bottom: 26px;
+    }
+
+    &__aside {
+        position: sticky;
+        top: 20px;
+        padding: 37px 30px 43px;
+        background: rgba(255, 255, 255, 0.00);
+        border: 1px solid var(--br-b);
+        border-top: 5px solid var(--br-b);
+        border-radius: 8px;
+        box-shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.10);
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        &-title {
+            font-size: 24px;
+            line-height: 125%;
+            font-weight: 900;
+            color: var(--cl-a);
+        }
+
+        &-headings {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+            font-size: 16px;
+            line-height: 150%;
+            font-weight: 400;
+            color: var(--cl-a);
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        color: var(--cl-a);
+    }
+}
