@@ -1,0 +1,25 @@
+.actuall-section {
+    padding: 70px 0;
+
+    &__wrapp {
+        .article-card {
+            display: grid;
+            grid-template-columns: 356px 1fr;
+            align-items: center;
+            gap: 10px 40px;
+        }
+
+        .article-card__box {
+            display: grid;
+            grid-template-columns: 1fr 220px;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .article-card__title {
+            grid-column: span 2;
+            font-size: 48px;
+            line-height: 133%;
+        }
+    }
+}

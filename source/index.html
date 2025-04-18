@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header.html')
+
+  <main>
+    <nav class="tags-block">
+      <div class="container">
+        <div class="tags-block__wrapp">
+          <ul class="tags-block__nav">
+            <li>
+              <a href="/tag.html">
+                 <svg width='30' height='30'>
+                  <use href='img/sprite/sprite.svg#exchange'></use>
+                 </svg>
+                <p>Updates</p>
+              </a>
+            </li>
+            <li>
+              <a href="/tag.html">
+                <svg width='30' height='30'>
+                  <use href='img/sprite/sprite.svg#bookmark'></use>
+                 </svg>
+                <p>Fund Highlights</p>
+              </a>
+            </li>
+            <li>
+              <a href="/tag.html">
+                <svg width='30' height='30'>
+                  <use href='img/sprite/sprite.svg#open-book'></use>
+                 </svg>
+                <p>Investor Stories</p>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="tags-block__socials">
+            <li>
+              <a href="#">
+                <svg width='24' height='24'>
+                  <use href='img/sprite/sprite.svg#twitter'></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width='24' height='24'>
+                  <use href='img/sprite/sprite.svg#youtube-green'></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width='24' height='24'>
+                  <use href='img/sprite/sprite.svg#tel-green'></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="latest-section">
+      <div class="container">
+        <div class="latest-section__wrapp">
+          <div class="latest-section__top">
+            <h2 class="latest-section__title">Latest Articles</h2>
+
+            <div class="latest-section__controls">
+              <button class='swiper-btn swiper-button-prev'>
+                <svg width='14' height='14'>
+                  <use href='img/sprite/sprite.svg#arrow'></use>
+                </svg>
+              </button>
+              <button class='swiper-btn swiper-button-next'>
+                <svg width='14' height='14'>
+                  <use href='img/sprite/sprite.svg#arrow'></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="latest-section__slider">
+            <div class='swiper-container'>
+              <ul class='swiper-wrapper'>
+                <li class='swiper-slide'>
+                  <a class="article-card" href="/article.html">
+                    <div class="article-card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/cover.webp'>
+                        <img width='356' height='190' src='img/cover.png' alt='article'>
+                      </picture>
+                    </div>
+
+                    <div class="article-card__box">
+                      <div class="article-card__title">Real World $DEFI Utilities, 4,000,000 $DEFI Campaign…</div>
+
+                      <p class="article-card__except">March was a busy and impactful month for the De.Fi Ecosystem. We…</p>
+
+                      <div class="article-card__info">
+                        <i class="article-card__icon">
+                          <svg width='48' height='48'>
+                            <use href='img/sprite/sprite.svg#icon'></use>
+                          </svg>
+                        </i>
+                        <span class="article-card__sitename">Gamma Prime</span>
+                        <div class="article-card__details">
+                          <p class="artilce-card__pubtime">April 1</p>
+                          <p class="article-card__readtime">4 minutes</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class='swiper-slide'>
+                  <a class="article-card" href="/article.html">
+                    <div class="article-card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/cover.webp'>
+                        <img width='356' height='190' src='img/cover.png' alt='article'>
+                      </picture>
+                    </div>
+
+                    <div class="article-card__box">
+                      <div class="article-card__title">Donald Trump Jr. & Kevin O’Leary, $2,500,000 buyba…</div>
+
+                      <p class="article-card__except">February was filled with major updates, partnerships, and...</p>
+
+                      <div class="article-card__info">
+                        <i class="article-card__icon">
+                          <svg width='48' height='48'>
+                            <use href='img/sprite/sprite.svg#icon'></use>
+                          </svg>
+                        </i>
+                        <span class="article-card__sitename">Gamma Prime</span>
+                        <div class="article-card__details">
+                          <p class="artilce-card__pubtime">March 14</p>
+                          <p class="article-card__readtime">6 minutes</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class='swiper-slide'>
+                  <a class="article-card" href="/article.html">
+                    <div class="article-card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/cover.webp'>
+                        <img width='356' height='190' src='img/cover.png' alt='article'>
+                      </picture>
+                    </div>
+
+                    <div class="article-card__box">
+                      <div class="article-card__title">De.Fi World 2025 Recap: Joined by Donald Trump Jr.,…</div>
+
+                      <p class="article-card__except">On February 26, 2025, we hosted...</p>
+
+                      <div class="article-card__info">
+                        <i class="article-card__icon">
+                          <svg width='48' height='48'>
+                            <use href='img/sprite/sprite.svg#icon'></use>
+                          </svg>
+                        </i>
+                        <span class="article-card__sitename">Gamma Prime</span>
+                        <div class="article-card__details">
+                          <p class="artilce-card__pubtime">March 6</p>
+                          <p class="article-card__readtime">3 minutes</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class='swiper-slide'>
+                  <a class="article-card" href="/article.html">
+                    <div class="article-card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/cover.webp'>
+                        <img width='356' height='190' src='img/cover.png' alt='article'>
+                      </picture>
+                    </div>
+
+                    <div class="article-card__box">
+                      <div class="article-card__title">Real World $DEFI Utilities, 4,000,000 $DEFI Campaign…</div>
+
+                      <p class="article-card__except">March was a busy and impactful month for the De.Fi Ecosystem. We…</p>
+
+                      <div class="article-card__info">
+                        <i class="article-card__icon">
+                          <svg width='48' height='48'>
+                            <use href='img/sprite/sprite.svg#icon'></use>
+                          </svg>
+                        </i>
+                        <span class="article-card__sitename">Gamma Prime</span>
+                        <div class="article-card__details">
+                          <p class="artilce-card__pubtime">April 1</p>
+                          <p class="article-card__readtime">4 minutes</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class='swiper-slide'>
+                  <a class="article-card" href="/article.html">
+                    <div class="article-card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/cover.webp'>
+                        <img width='356' height='190' src='img/cover.png' alt='article'>
+                      </picture>
+                    </div>
+
+                    <div class="article-card__box">
+                      <div class="article-card__title">Donald Trump Jr. & Kevin O’Leary, $2,500,000 buyba…</div>
+
+                      <p class="article-card__except">February was filled with major updates, partnerships, and...</p>
+
+                      <div class="article-card__info">
+                        <i class="article-card__icon">
+                          <svg width='48' height='48'>
+                            <use href='img/sprite/sprite.svg#icon'></use>
+                          </svg>
+                        </i>
+                        <span class="article-card__sitename">Gamma Prime</span>
+                        <div class="article-card__details">
+                          <p class="artilce-card__pubtime">March 14</p>
+                          <p class="article-card__readtime">6 minutes</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class='swiper-slide'>
+                  <a class="article-card" href="/article.html">
+                    <div class="article-card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/cover.webp'>
+                        <img width='356' height='190' src='img/cover.png' alt='article'>
+                      </picture>
+                    </div>
+
+                    <div class="article-card__box">
+                      <div class="article-card__title">De.Fi World 2025 Recap: Joined by Donald Trump Jr.,…</div>
+
+                      <p class="article-card__except">On February 26, 2025, we hosted...</p>
+
+                      <div class="article-card__info">
+                        <i class="article-card__icon">
+                          <svg width='48' height='48'>
+                            <use href='img/sprite/sprite.svg#icon'></use>
+                          </svg>
+                        </i>
+                        <span class="article-card__sitename">Gamma Prime</span>
+                        <div class="article-card__details">
+                          <p class="artilce-card__pubtime">March 6</p>
+                          <p class="article-card__readtime">3 minutes</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="best-section">
+      <div class="container">
+        <div class="best-section__wrapp">
+          <h2 class="best-section__title">Top Articles</h2>
+
+          <ul class="best-section__items">
+            <li>
+              <a class="article-card" href="/article.html">
+                <div class="article-card__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/cover.webp'>
+                    <img width='554' height='292' src='img/cover.png' alt='article'>
+                  </picture>
+                </div>
+
+                <div class="article-card__box">
+                  <div class="article-card__title">Using a Honeypot Checker: Keep Your Crypto Safe Across 15+ EVM Chains</div>
+
+                  <p class="article-card__except">This article will provide you with insights regarding what a honeypot is, why it's dangerous, and how to use our cuttin…</p>
+
+                  <div class="article-card__info">
+                    <i class="article-card__icon">
+                      <svg width='48' height='48'>
+                        <use href='img/sprite/sprite.svg#icon'></use>
+                      </svg>
+                    </i>
+                    <span class="article-card__sitename">Gamma Prime</span>
+                    <div class="article-card__details">
+                      <p class="artilce-card__pubtime">July 10</p>
+                      <p class="article-card__readtime">6 minutes</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a class="article-card" href="/article.html">
+                <div class="article-card__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/cover.webp'>
+                    <img width='554' height='292' src='img/cover.png' alt='article'>
+                  </picture>
+                </div>
+
+                <div class="article-card__box">
+                  <div class="article-card__title">What Is a DeFi Wallet?</div>
+
+                  <p class="article-card__except">In this article, we'll delve into the world of crypto wallets, explaining what they are, how they work, how to choose t…</p>
+
+                  <div class="article-card__info">
+                    <i class="article-card__icon">
+                      <svg width='48' height='48'>
+                        <use href='img/sprite/sprite.svg#icon'></use>
+                      </svg>
+                    </i>
+                    <span class="article-card__sitename">Gamma Prime</span>
+                    <div class="article-card__details">
+                      <p class="artilce-card__pubtime">July 26</p>
+                      <p class="article-card__readtime">12 minutes</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a class="article-card" href="/article.html">
+                <div class="article-card__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/cover.webp'>
+                    <img width='554' height='292' src='img/cover.png' alt='article'>
+                  </picture>
+                </div>
+
+                <div class="article-card__box">
+                  <div class="article-card__title">Using a Honeypot Checker: Keep Your Crypto Safe Across 15+ EVM Chains</div>
+
+                  <p class="article-card__except">This article will provide you with insights regarding what a honeypot is, why it's dangerous, and how to use our cuttin…</p>
+
+                  <div class="article-card__info">
+                    <i class="article-card__icon">
+                      <svg width='48' height='48'>
+                        <use href='img/sprite/sprite.svg#icon'></use>
+                      </svg>
+                    </i>
+                    <span class="article-card__sitename">Gamma Prime</span>
+                    <div class="article-card__details">
+                      <p class="artilce-card__pubtime">July 10</p>
+                      <p class="article-card__readtime">6 minutes</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a class="article-card" href="/article.html">
+                <div class="article-card__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/cover.webp'>
+                    <img width='554' height='292' src='img/cover.png' alt='article'>
+                  </picture>
+                </div>
+
+                <div class="article-card__box">
+                  <div class="article-card__title">What Is a DeFi Wallet?</div>
+
+                  <p class="article-card__except">In this article, we'll delve into the world of crypto wallets, explaining what they are, how they work, how to choose t…</p>
+
+                  <div class="article-card__info">
+                    <i class="article-card__icon">
+                      <svg width='48' height='48'>
+                        <use href='img/sprite/sprite.svg#icon'></use>
+                      </svg>
+                    </i>
+                    <span class="article-card__sitename">Gamma Prime</span>
+                    <div class="article-card__details">
+                      <p class="artilce-card__pubtime">July 26</p>
+                      <p class="article-card__readtime">12 minutes</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="all-section">
+      <div class="container">
+        <div class="all-section__wrapp">
+          <h2 class="all-section__title">All Articles</h2>
+
+          <ul class="all-section__items">
+            <li>
+              <a class="article-card" href="/article.html">
+                <div class="article-card__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/cover.webp'>
+                    <img width='356' height='190' src='img/cover.png' alt='article'>
+                  </picture>
+                </div>
+
+                <div class="article-card__box">
+                  <div class="article-card__title">Real World $DEFI Utilities, 4,000,000 $DEFI Campaign…</div>
+
+                  <p class="article-card__except">March was a busy and impactful month for the De.Fi Ecosystem. We…</p>
+
+                  <div class="article-card__info">
+                    <i class="article-card__icon">
+                      <svg width='48' height='48'>
+                        <use href='img/sprite/sprite.svg#icon'></use>
+                      </svg>
+                    </i>
+                    <span class="article-card__sitename">Gamma Prime</span>
+                    <div class="article-card__details">
+                      <p class="artilce-card__pubtime">April 1</p>
+                      <p class="article-card__readtime">4 minutes</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a class="article-card" href="/article.html">
+                <div class="article-card__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/cover.webp'>
+                    <img width='356' height='190' src='img/cover.png' alt='article'>
+                  </picture>
+                </div>
+
+                <div class="article-card__box">
+                  <div class="article-card__title">Real World $DEFI Utilities, 4,000,000 $DEFI Campaign…</div>
+
+                  <p class="article-card__except">March was a busy and impactful month for the De.Fi Ecosystem. We…</p>
+
+                  <div class="article-card__info">
+                    <i class="article-card__icon">
+                      <svg width='48' height='48'>
+                        <use href='img/sprite/sprite.svg#icon'></use>
+                      </svg>
+                    </i>
+                    <span class="article-card__sitename">Gamma Prime</span>
+                    <div class="article-card__details">
+                      <p class="artilce-card__pubtime">April 1</p>
+                      <p class="article-card__readtime">4 minutes</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a class="article-card" href="/article.html">
+                <div class="article-card__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/cover.webp'>
+                    <img width='356' height='190' src='img/cover.png' alt='article'>
+                  </picture>
+                </div>
+
+                <div class="article-card__box">
+                  <div class="article-card__title">Real World $DEFI Utilities, 4,000,000 $DEFI Campaign…</div>
+
+                  <p class="article-card__except">March was a busy and impactful month for the De.Fi Ecosystem. We…</p>
+
+                  <div class="article-card__info">
+                    <i class="article-card__icon">
+                      <svg width='48' height='48'>
+                        <use href='img/sprite/sprite.svg#icon'></use>
+                      </svg>
+                    </i>
+                    <span class="article-card__sitename">Gamma Prime</span>
+                    <div class="article-card__details">
+                      <p class="artilce-card__pubtime">April 1</p>
+                      <p class="article-card__readtime">4 minutes</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a class="article-card" href="/article.html">
+                <div class="article-card__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/cover.webp'>
+                    <img width='356' height='190' src='img/cover.png' alt='article'>
+                  </picture>
+                </div>
+
+                <div class="article-card__box">
+                  <div class="article-card__title">Real World $DEFI Utilities, 4,000,000 $DEFI Campaign…</div>
+
+                  <p class="article-card__except">March was a busy and impactful month for the De.Fi Ecosystem. We…</p>
+
+                  <div class="article-card__info">
+                    <i class="article-card__icon">
+                      <svg width='48' height='48'>
+                        <use href='img/sprite/sprite.svg#icon'></use>
+                      </svg>
+                    </i>
+                    <span class="article-card__sitename">Gamma Prime</span>
+                    <div class="article-card__details">
+                      <p class="artilce-card__pubtime">April 1</p>
+                      <p class="article-card__readtime">4 minutes</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a class="article-card" href="/article.html">
+                <div class="article-card__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/cover.webp'>
+                    <img width='356' height='190' src='img/cover.png' alt='article'>
+                  </picture>
+                </div>
+
+                <div class="article-card__box">
+                  <div class="article-card__title">Real World $DEFI Utilities, 4,000,000 $DEFI Campaign…</div>
+
+                  <p class="article-card__except">March was a busy and impactful month for the De.Fi Ecosystem. We…</p>
+
+                  <div class="article-card__info">
+                    <i class="article-card__icon">
+                      <svg width='48' height='48'>
+                        <use href='img/sprite/sprite.svg#icon'></use>
+                      </svg>
+                    </i>
+                    <span class="article-card__sitename">Gamma Prime</span>
+                    <div class="article-card__details">
+                      <p class="artilce-card__pubtime">April 1</p>
+                      <p class="article-card__readtime">4 minutes</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a class="article-card" href="/article.html">
+                <div class="article-card__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/cover.webp'>
+                    <img width='356' height='190' src='img/cover.png' alt='article'>
+                  </picture>
+                </div>
+
+                <div class="article-card__box">
+                  <div class="article-card__title">Real World $DEFI Utilities, 4,000,000 $DEFI Campaign…</div>
+
+                  <p class="article-card__except">March was a busy and impactful month for the De.Fi Ecosystem. We…</p>
+
+                  <div class="article-card__info">
+                    <i class="article-card__icon">
+                      <svg width='48' height='48'>
+                        <use href='img/sprite/sprite.svg#icon'></use>
+                      </svg>
+                    </i>
+                    <span class="article-card__sitename">Gamma Prime</span>
+                    <div class="article-card__details">
+                      <p class="artilce-card__pubtime">April 1</p>
+                      <p class="article-card__readtime">4 minutes</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a class="article-card" href="/article.html">
+                <div class="article-card__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/cover.webp'>
+                    <img width='356' height='190' src='img/cover.png' alt='article'>
+                  </picture>
+                </div>
+
+                <div class="article-card__box">
+                  <div class="article-card__title">Real World $DEFI Utilities, 4,000,000 $DEFI Campaign…</div>
+
+                  <p class="article-card__except">March was a busy and impactful month for the De.Fi Ecosystem. We…</p>
+
+                  <div class="article-card__info">
+                    <i class="article-card__icon">
+                      <svg width='48' height='48'>
+                        <use href='img/sprite/sprite.svg#icon'></use>
+                      </svg>
+                    </i>
+                    <span class="article-card__sitename">Gamma Prime</span>
+                    <div class="article-card__details">
+                      <p class="artilce-card__pubtime">April 1</p>
+                      <p class="article-card__readtime">4 minutes</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a class="article-card" href="/article.html">
+                <div class="article-card__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/cover.webp'>
+                    <img width='356' height='190' src='img/cover.png' alt='article'>
+                  </picture>
+                </div>
+
+                <div class="article-card__box">
+                  <div class="article-card__title">Real World $DEFI Utilities, 4,000,000 $DEFI Campaign…</div>
+
+                  <p class="article-card__except">March was a busy and impactful month for the De.Fi Ecosystem. We…</p>
+
+                  <div class="article-card__info">
+                    <i class="article-card__icon">
+                      <svg width='48' height='48'>
+                        <use href='img/sprite/sprite.svg#icon'></use>
+                      </svg>
+                    </i>
+                    <span class="article-card__sitename">Gamma Prime</span>
+                    <div class="article-card__details">
+                      <p class="artilce-card__pubtime">April 1</p>
+                      <p class="article-card__readtime">4 minutes</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a class="article-card" href="/article.html">
+                <div class="article-card__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/cover.webp'>
+                    <img width='356' height='190' src='img/cover.png' alt='article'>
+                  </picture>
+                </div>
+
+                <div class="article-card__box">
+                  <div class="article-card__title">Real World $DEFI Utilities, 4,000,000 $DEFI Campaign…</div>
+
+                  <p class="article-card__except">March was a busy and impactful month for the De.Fi Ecosystem. We…</p>
+
+                  <div class="article-card__info">
+                    <i class="article-card__icon">
+                      <svg width='48' height='48'>
+                        <use href='img/sprite/sprite.svg#icon'></use>
+                      </svg>
+                    </i>
+                    <span class="article-card__sitename">Gamma Prime</span>
+                    <div class="article-card__details">
+                      <p class="artilce-card__pubtime">April 1</p>
+                      <p class="article-card__readtime">4 minutes</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @include('partials/footer.html')
+
+  <script src="js/swiper.js" defer></script>
+  <script defer src="js/main.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,21 @@
+.swiper-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: var(--bg-a);
+  color: var(--cl-c);
+  border-radius: 100%;
+  transition: all 0.3s;
+
+  svg {
+    fill: currentColor;
+  }
+
+  &:hover,
+  &:active {
+    background-color: var(--bg-c);
+    color: var(--cl-a);
+  }
+}

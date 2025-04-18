@@ -1,0 +1,36 @@
+:root {
+  // --------------- default global variables ---------------
+  --body-font-size: 16px;
+  --body-bg: #081116;
+  --content-width: 1158px;
+
+  --container-offset: clamp(16px, 6.348vw, 65px);
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+    // --------------- default JS variables ---------------
+    --header-height: 118px;
+ 
+    // @include tablet {
+    //   --header-height: 74px;
+    // }
+
+  // --------------- default font-family variables ---------------
+  --font-family: "Red Hat Display", sans-serif; // var(--font-family);
+
+  // --------------- default text color variables ---------------
+  --cl-a: #ffffff; // var(--cl-a);
+  --cl-b: #000000; // var(--cl-b);
+  --cl-c: #F0F1E7; // var(--cl-c);
+  --cl-d: #39CA88; // var(--cl-d);
+
+  // --------------- default background color variables ---------------
+  --bg-a: #ffffff; // var(--bg-a);
+  --bg-b: #000000; // var(--bg-b);
+  --bg-c: #39CA88; // var(--bg-c);
+
+  // --------------- default border color variable ---------------
+  --br-a: #ffffff; // var(--br-a);
+  --br-b: #39CA88; // var(--br-b);
+}       
+
+

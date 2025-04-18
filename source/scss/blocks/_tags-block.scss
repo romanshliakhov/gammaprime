@@ -1,0 +1,45 @@
+.tags-block {
+    &__wrapp {
+        padding: 22px 0;
+        border-bottom: 1px solid var(--br-a);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+            line-height: 142%;
+            font-weight: 500;
+            color: var(--cl-a);
+            text-transform: uppercase;
+            letter-spacing: 0.56px;
+
+            svg {
+                fill: transparent;
+            }
+        }
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        a {
+            display: flex;
+
+            svg {
+                fill: transparent;
+            }
+        }
+    }
+}

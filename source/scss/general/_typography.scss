@@ -1,0 +1,200 @@
+.logo{
+  display: flex;
+
+  svg,img{
+    height: auto;
+  }
+}
+
+.product__accordion-info {
+  width: 100%;
+
+  h1 {
+    margin-bottom: 20px;
+    font-family: var(--font-family);
+    font-size: clamp(20px, 6.944vw, 40px);
+    line-height: 130%;
+    color: var(--cl-b);
+    font-weight: 700;
+  }
+
+  h2 {
+    margin: 20px 0;
+    font-family: var(--font-family);
+    font-size: clamp(20px, 6.25vw, 36px);
+    line-height: 130%;
+    color: var(--cl-b);
+    font-weight: 700;
+  }
+
+  h3 {
+    margin: 20px 0;
+    font-family: var(--font-family);
+    font-size: clamp(18px, 5.556vw, 32px);
+    line-height: 130%;
+    color: var(--cl-b);
+    font-weight: 700;
+  }
+
+  h4 {
+    margin: 20px 0;
+    font-family: var(--font-family);
+    font-size: clamp(17px, 4.861vw, 28px);
+    line-height: 130%;
+    color: var(--cl-b);
+    font-weight: 700;
+  }
+
+  h5 {
+    margin: 20px 0;
+    font-family: var(--font-family);
+    font-size: clamp(16px, 4.167vw, 24px);
+    line-height: 130%;
+    color: var(--cl-b);
+    font-weight: 700;
+  }
+
+  h6 {
+    margin: 20px 0;
+    font-family: var(--font-family);
+    font-size: clamp(16px, 3.472vw, 20px);
+    line-height: 130%;
+    color: var(--cl-b);
+    font-weight: 700;
+  }
+
+  p {
+    margin-bottom: 15px;
+    font-family: var(--font-family);
+    font-size: clamp(14px, 2.778vw, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    color: var(--cl-b);
+  }
+
+  p + p {
+    margin-top: 10px;
+  }
+
+  blockquote {
+    margin: 15px 0;
+    border-left: 0;
+    font-family: var(--font-family);
+    font-size: clamp(16px, 3.125vw, 18px);
+    font-weight: 300;
+    line-height: 130%;
+    color: var(--cl-c);
+  }
+
+  strong, b {
+    font-family: var(--font-family);
+    font-size: clamp(14px, 2.778vw, 16px);
+    line-height: 130%;
+    font-weight: 700;
+    color: var(--cl-c);
+  }
+
+  em, i {
+    font-family: var(--font-family);
+    font-size: clamp(14px, 2.778vw, 16px);
+    line-height: 130%;
+    font-weight: 300;
+    color: var(--cl-c);
+  }
+
+  u {
+    font-family: var(--font-family);
+    font-size: clamp(14px, 2.778vw, 16px);
+    line-height: 130%;
+    color: var(--cl-c);
+  }
+
+  a {
+    font-family: var(--font-family);
+    font-size: clamp(14px, 2.778vw, 16px);
+    line-height: 130%;
+    color: var(--cl-c);
+    transition: 0.2s ease;
+    word-wrap: break-word;
+  }
+
+  a:hover {
+    color: var(--cl-d);
+  }
+
+  ul, ol {
+    margin: 20px 0;
+    
+    li {
+      list-style-position: inside;
+      font-family: var(--font-family);
+      font-size: clamp(14px, 2.778vw, 16px);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
+      color: var(--cl-b);
+
+      p {
+        display: inline;
+      }
+    }
+
+    li + li {
+      margin-top: 10px;
+    }
+  }
+
+  ul li::marker,
+  ol li::marker {
+    color: var(--cl-c);
+  }
+
+  ul li {
+    list-style-type: disc;
+  }
+
+  ul ul,
+  ul ol {
+    margin: 15px 0 15px 15px;
+
+    li + li {
+      margin-top: 10px;
+    }
+  }
+
+  ol ul,
+  ol ol {
+    margin: 15px 0 15px 15px;
+
+    li + li {
+      margin-top: 10px;
+    }
+  }
+
+  ol li {
+    list-style-type: decimal;
+  }
+
+  table {
+    margin: 20px 0;
+    font-family: var(--font-family);
+    font-size: clamp(14px, 2.778vw, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    color: var(--cl-b);
+    border-spacing: 0;
+    box-shadow: none;
+    border: 1px solid var(--br-a);
+  }
+
+  thead th {
+    background-color: var(--bg-g);
+    border: 1px solid var(--br-a);
+  }
+
+  tbody td {
+    border: 1px solid var(--br-a);
+  }
+}

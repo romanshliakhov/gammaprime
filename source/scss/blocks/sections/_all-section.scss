@@ -1,0 +1,22 @@
+.all-section {
+    padding: 70px 0;
+
+    &__wrapp {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__title {
+        font-size: 32px;
+        line-height: 140%;
+        font-weight: 500;
+        color: var(--cl-d);
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px 45px;
+    }
+}
