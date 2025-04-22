@@ -1,6 +1,10 @@
 .footer {
     padding: clamp(28px, 7.227vw, 74px) 0 clamp(52px, 7.227vw, 74px);
 
+    @include small-tablet {
+        background-color: #08091D;
+    }
+ 
     &__wrapp {
         display: flex;
         align-items: flex-start;

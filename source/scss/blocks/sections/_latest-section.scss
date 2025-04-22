@@ -13,6 +13,10 @@
         background-repeat: no-repeat;
         height: 822px;
         width: 429px;
+
+        @include small-tablet {
+            width: 100%;
+        }
     }
 
     &::after {
