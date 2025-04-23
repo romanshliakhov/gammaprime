@@ -14,6 +14,10 @@
         background-repeat: no-repeat;
         height: 609px;
         width: 429px;
+
+        @include small-tablet {
+            width: 100%;
+        }
     }
 
     &::after {
@@ -28,6 +32,10 @@
         background-repeat: no-repeat;
         height: 609px;
         width: 429px;
+
+        @include small-tablet {
+            width: 100%;
+        }
     }
 
     &__wrapp {
