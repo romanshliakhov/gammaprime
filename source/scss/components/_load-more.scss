@@ -24,5 +24,12 @@
         font-size: 20px;
         line-height: 120%;
         font-weight: 600;
+        transition: 0.3s ease;
+
+        &:hover,
+        &:active {
+            background-color: var(--bg-a);
+            color: var(--cl-b);
+        }
     }
 }

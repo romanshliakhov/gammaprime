@@ -14,6 +14,7 @@
         background-repeat: no-repeat;
         height: 609px;
         width: 429px;
+        z-index: -1;
 
         @include small-tablet {
             width: 100%;
@@ -32,6 +33,7 @@
         background-repeat: no-repeat;
         height: 609px;
         width: 429px;
+        z-index: -1;
 
         @include small-tablet {
             width: 100%;
