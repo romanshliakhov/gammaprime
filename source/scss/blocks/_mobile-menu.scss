@@ -11,9 +11,6 @@
   visibility: hidden;
   transition: 0.3s ease;
   padding: calc(var(--header-height)) 20px 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   @include for-tablet {
     display: contents;

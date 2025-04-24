@@ -1,15 +1,50 @@
 .article {
-    padding: clamp(15px, 5.645vw, 70px) 0 clamp(25px, 5.645vw, 70px);
+    position: relative;
+    padding: clamp(15px, 5.645vw, 70px) 0 clamp(55px, 5.645vw, 70px);
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: clamp(15px, 4.861vw, 70px);
+        width: 218px;
+        height: 870px;
+        background: rgba(57, 202, 136, 0.28);
+        filter: blur(105.25px);
+        z-index: -1;
+
+        @include mobile {
+            width: 176px;
+            height: 130px;
+            background: rgba(57, 202, 136, 0.2);
+            filter: blur(47.0275993347168px);
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: clamp(15px, 4.861vw, 70px);
+        width: 218px;
+        height: 870px;
+        background: rgba(57, 202, 136, 0.28);
+        filter: blur(105.25px);
+        z-index: -1;
+
+        @include mobile {
+            display: none;
+        }
+    }
 
     &__top {
         display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
         gap: 20px;
 
         @include for-small-tablet {
             margin-bottom: 26px;
-            // grid-template-columns: 1fr auto;
-            grid-template-columns: 100%;
-            align-items: center;
         }
     }
 
@@ -25,32 +60,8 @@
         -webkit-text-fill-color: transparent;
     }
 
-    &__btn {
-        width: fit-content;
-        padding: 11px 24px;
-        border-radius: 8px;
-        border: 1px solid rgba(255, 255, 255, 0.05);
-        background-color: rgba(57, 202, 136, 0.90);
-        font-family: var(--font-inter);
-        font-size: 14px;
-        line-height: 142%;
-        font-weight: 500;
-        color: var(--cl-a);
-        letter-spacing: 0.2px;
-        transition: all 0.3s ease;
-
-        &:hover,
-        &:active {
-            background-color: var(--bg-a);
-            color: var(--cl-b);
-        }
-
-        @include small-tablet {
-            order: 1;
-        }
-    }
-
     &__box {
+        position: relative;
         padding: 24px 0 55px;
         display: grid;
         align-items: flex-start;
@@ -87,10 +98,13 @@
         grid-column: 1 / -1;
         display: flex;
         border: 1px solid var(--br-b);
-        height: clamp(370px, 42.708vw, 615px);
 
         @include for-tablet {
             margin-bottom: 26px;
+        }
+
+        @include for-small-tablet {
+            height: clamp(370px, 42.708vw, 615px);
         }
 
         @include small-tablet {

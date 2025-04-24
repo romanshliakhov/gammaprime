@@ -41,6 +41,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include tablet {
+            padding-top: clamp(30px, 6.836vw, 70px);
+        }
     }
 
     &__menu {
@@ -60,6 +64,9 @@
                 color:  var(--cl-a);
     
                 i {
+                    padding: 4px;
+                    background-color: #13152E;
+                    border-radius: 6px;
                     font-family: var(--font-dmsans);
                     font-size: 12px;
                     line-height: 100%;
@@ -84,6 +91,9 @@
                 color:  var(--cl-a);
     
                 i {
+                    padding: 4px;
+                    background-color: #13152E;
+                    border-radius: 6px;
                     font-family: var(--font-dmsans);
                     font-size: 20px;
                     line-height: 100%;

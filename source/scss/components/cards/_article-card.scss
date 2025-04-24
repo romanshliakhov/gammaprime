@@ -98,18 +98,18 @@
         line-height: 150%;
         font-weight: 400;
         color: var(--cl-a);
+    }
 
-        p:not(:first-of-type) {
-            position: relative;
+    &__readtime {
+        position: relative;
 
-            &::before {
-                content: '•';
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                left: -13px;
-                color: var(--cl-a);
-            }
+        &::before {
+            content: '•';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -13px;
+            color: var(--cl-a);
         }
     }
 }

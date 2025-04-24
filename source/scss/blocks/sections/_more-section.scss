@@ -1,31 +1,31 @@
 .more-section {
-    padding: clamp(30px, 6.836vw, 70px) 0 70px;
+    padding-bottom: 70px;
     position: relative;
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: var(--left-latest);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 822px;
-        width: 429px;
-    }
+    @include for-small-tablet {
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: clamp(30px, 6.836vw, 70px);
+            width: 218px;
+            height: 494px;
+            background: rgba(57, 202, 136, 0.28);
+            filter: blur(105.25px);
+            z-index: -1;
+        }
 
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-image: var(--right-latest);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 822px;
-        width: 429px;
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: clamp(30px, 6.836vw, 70px);
+            width: 218px;
+            height: 494px;
+            background: rgba(57, 202, 136, 0.28);
+            filter: blur(105.25px);
+            z-index: -1;
+        }
     }
 
     &__wrapp {

@@ -6,13 +6,6 @@
         content: '';
         position: absolute;
         left: 0;
-        // bottom: 0;
-        // background-image: var(--left-decor);
-        // background-size: cover;
-        // background-position: center;
-        // background-repeat: no-repeat;
-        // height: 1037px;
-        // width: 429px;
         bottom: clamp(30px, 6.836vw, 70px);
         width: 218px;
         height: 615px;
@@ -20,8 +13,10 @@
         filter: blur(105.25px);
         z-index: -1;
 
-        @include small-tablet {
-            width: 100%;
+        @include mobile {
+            bottom: initial;
+            top: 0;
+            height: 400px;
         }
     }
 
@@ -29,19 +24,16 @@
         content: '';
         position: absolute;
         right: 0;
-        // bottom: 0;
-        // background-image: var(--right-decor);
-        // background-size: cover;
-        // background-position: center;
-        // background-repeat: no-repeat;
-        // height: 1037px;
-        // width: 429px;
         bottom: clamp(30px, 6.836vw, 70px);
         width: 218px;
         height: 615px;
         background: rgba(57, 202, 136, 0.28);
         filter: blur(105.25px);
         z-index: -1;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     &__wrapp {
