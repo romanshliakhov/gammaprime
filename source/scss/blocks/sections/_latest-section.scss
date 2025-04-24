@@ -72,8 +72,9 @@
             padding: 0 var(--container-offset);
         }
         
-        &-slide{
+        &-slide {
             width: 100%;
+            height: initial;
         }
 
         &-container{

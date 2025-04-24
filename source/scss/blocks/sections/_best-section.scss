@@ -55,4 +55,14 @@
             grid-template-columns: repeat(2, 1fr);
         }
     }
+
+    .article-card__image {
+        @include for-tablet {
+            height: clamp(190px, 24.194vw, 300px);
+        }
+
+        @include small-tablet {
+            height: clamp(200px, 48.177vw, 370px);
+        }
+    }
 }

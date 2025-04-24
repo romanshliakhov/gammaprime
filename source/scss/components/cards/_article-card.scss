@@ -2,10 +2,31 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 10px;
 
     &__image {
         display: flex;
+        border: 1px solid var(--br-b);
+        padding: 1px;
+        border-radius: 8px;
+        overflow: hidden;
+        flex-grow: 1;
+        flex-shrink: 0;
+
+        @include for-tablet {
+            height: 200px;
+        }
+
+        @include for-small-tablet {
+            @include laptop {
+                height: clamp(190px, 24.194vw, 300px);
+            }
+        }
+
+        @include small-tablet {
+            height: clamp(200px, 48.177vw, 370px);
+        }
 
         picture,
         img {
@@ -16,11 +37,11 @@
     }
 
     &__box {
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         gap: clamp(15px, 2.148vw, 22px);
-        flex-grow: 1;
     }
 
     &__title {
@@ -33,6 +54,10 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
     }
 
     &__except {
@@ -40,6 +65,10 @@
         line-height: 150%;
         font-weight: 500;
         color: var(--cl-a);
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
     }
 
     &__info {
