@@ -56,6 +56,16 @@
         @include for-small-tablet {
             grid-template-columns: repeat(2, 1fr);
         }
+
+        @include mobile {
+            li {
+                display: none;
+            }
+            
+            li:nth-child(-n+2) {
+                display: list-item;
+            }
+        }
     }
 
     .article-card__image {

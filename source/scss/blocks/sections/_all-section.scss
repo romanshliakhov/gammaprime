@@ -62,5 +62,15 @@
                 grid-template-columns: repeat(2, 1fr);
             }
         }
+
+        @include mobile {
+            li {
+                display: none;
+            }
+            
+            li:nth-child(-n+6) {
+                display: list-item;
+            }
+        }
     }
 }

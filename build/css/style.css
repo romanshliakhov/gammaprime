@@ -1699,6 +1699,14 @@ select:-webkit-autofill:focus {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (max-width: 576px) {
+  .best-section__items li {
+    display: none;
+  }
+  .best-section__items li:nth-child(-n+2) {
+    display: list-item;
+  }
+}
 @media (min-width: 1025px) {
   .best-section .article-card__image {
     height: clamp(190px, 24.194vw, 300px);
@@ -1781,6 +1789,14 @@ select:-webkit-autofill:focus {
   .all-section__items {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .all-section__items li {
+    display: none;
+  }
+  .all-section__items li:nth-child(-n+6) {
+    display: list-item;
   }
 }
 
