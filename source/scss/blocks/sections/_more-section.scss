@@ -1,32 +1,6 @@
 .more-section {
-    padding-bottom: 70px;
+    padding: 56px 0 40px;
     position: relative;
-
-    @include for-small-tablet {
-        &::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: clamp(30px, 6.836vw, 70px);
-            width: 218px;
-            height: 494px;
-            background: rgba(57, 202, 136, 0.28);
-            filter: blur(105.25px);
-            z-index: -1;
-        }
-
-        &::after {
-            content: '';
-            position: absolute;
-            right: 0;
-            bottom: clamp(30px, 6.836vw, 70px);
-            width: 218px;
-            height: 494px;
-            background: rgba(57, 202, 136, 0.28);
-            filter: blur(105.25px);
-            z-index: -1;
-        }
-    }
 
     &__wrapp {
         display: flex;
@@ -37,13 +11,13 @@
     &__title {
         font-size: clamp(24px, 3.125vw, 32px);
         line-height: 140%;
-        font-weight: 500;
-        color: var(--cl-d);
+        font-weight: 700;
+        color: var(--cl-a);
     }
 
     &__items {
         display: grid;
-        gap: 40px clamp(30px, 4.032vw, 50px);
+        gap: 24px 22px;
 
         @include for-tablet {
             grid-template-columns: repeat(3, 1fr);

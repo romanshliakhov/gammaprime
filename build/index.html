@@ -14,6 +14,9 @@
   <link rel="preload" href="fonts/AvenirNext-Bold.woff" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/AvenirNext-Black.woff" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Inter-Medium.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/DMSans-Regular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/DMSans-Medium.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/DMSans-Bold.woff" as="font" crossorigin="anonymous">
 
 
   <link rel="stylesheet" href="css/style.css">
@@ -40,6 +43,9 @@
               </li>
               <li>
                 <a href="#">About Us</a>
+              </li>
+              <li>
+                <a class="active" href="#">Blog</a>
               </li>
               <li>
                 <a href="#">Products & Tool <i>Soon</i></a>
@@ -136,179 +142,54 @@
             </div>
           </div>
 
-          <div class="latest-section__slider">
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-          
-                <!-- Карточка 1 -->
-                <div class="swiper-slide">
-                  <a class="article-card" href="/article.html">
-                    <div class="article-card__image">
-                      <picture>
-                        <source type="image/webp" srcset="img/post1.webp">
-                        <img width="356" height="200" src="img/post1.png" alt="article">
-                      </picture>
-                    </div>
-                    <div class="article-card__box">
-                      <div class="article-card__title">Real World $DEFI Utilities, 4,000,000 $DEFI Campaign with ByBit, Interview with Kevin O’Leary and MORE! – March Development Recap</div>
-                      <p class="article-card__except">March was a busy and impactful month for the De.Fi Ecosystem. We…</p>
-                      <div class="article-card__info">
-                        <i class="article-card__icon">
-                          <svg width="48" height="48">
-                            <use href="img/sprite/sprite.svg#icon"></use>
-                          </svg>
-                        </i>
-                        <span class="article-card__sitename">Gamma Prime</span>
-                        <div class="article-card__details">
-                          <time class="article-card__pubtime" datetime="2025-04-01">April 1</time>
-                          <p class="article-card__readtime">4 minutes</p>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
+          <div class="latest-section__items">
+            <li>
+              <a class="article-card" href="/article.html">
+                <div class="article-card__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/post1.webp">
+                    <img width="356" height="200" src="img/post1.png" alt="article">
+                  </picture>
                 </div>
-          
-                <!-- Карточка 2 -->
-                <div class="swiper-slide">
-                  <a class="article-card" href="/article.html">
-                    <div class="article-card__image">
-                      <picture>
-                        <source type="image/webp" srcset="img/post2.webp">
-                        <img width="356" height="200" src="img/post2.png" alt="article">
-                      </picture>
-                    </div>
-                    <div class="article-card__box">
-                      <div class="article-card__title">Donald Trump Jr. & Kevin O’Leary, $2,500,000 buyba…</div>
-                      <p class="article-card__except">February was filled with major updates, partnerships, and...</p>
-                      <div class="article-card__info">
-                        <i class="article-card__icon">
-                          <svg width="48" height="48">
-                            <use href="img/sprite/sprite.svg#icon"></use>
-                          </svg>
-                        </i>
-                        <span class="article-card__sitename">Gamma Prime</span>
-                        <div class="article-card__details">
-                          <time class="article-card__pubtime" datetime="2025-03-14">March 14</time>
-                          <p class="article-card__readtime">6 minutes</p>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
+
+                <div class="article-card__box">
+                  <div class="article-card__title">Using a Honeypot Checker: Keep Your Crypto Safe Across 15+ EVM Chains</div>
+                  <p class="article-card__except">This article will provide you with insights regarding what a honeypot is, why it's dangerous, and how to use our cuttin…</p>
                 </div>
-          
-                <!-- Карточка 3 -->
-                <div class="swiper-slide">
-                  <a class="article-card" href="/article.html">
-                    <div class="article-card__image">
-                      <picture>
-                        <source type="image/webp" srcset="img/post3.webp">
-                        <img width="356" height="200" src="img/post3.png" alt="article">
-                      </picture>
-                    </div>
-                    <div class="article-card__box">
-                      <div class="article-card__title">De.Fi World 2025 Recap: Joined by Donald Trump Jr.,…</div>
-                      <p class="article-card__except">On February 26, 2025, we hosted...</p>
-                      <div class="article-card__info">
-                        <i class="article-card__icon">
-                          <svg width="48" height="48">
-                            <use href="img/sprite/sprite.svg#icon"></use>
-                          </svg>
-                        </i>
-                        <span class="article-card__sitename">Gamma Prime</span>
-                        <div class="article-card__details">
-                          <time class="article-card__pubtime" datetime="2025-03-06">March 6</time>
-                          <p class="article-card__readtime">3 minutes</p>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
+              </a>
+            </li>
+
+            <li>
+              <a class="article-card" href="/article.html">
+                <div class="article-card__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/post2.webp">
+                    <img width="356" height="200" src="img/post2.png" alt="article">
+                  </picture>
                 </div>
-          
-                <!-- Карточка 4 (повтор карточки 1) -->
-                <div class="swiper-slide">
-                  <a class="article-card" href="/article.html">
-                    <div class="article-card__image">
-                      <picture>
-                        <source type="image/webp" srcset="img/cover.webp">
-                        <img width="356" height="200" src="img/cover.png" alt="article">
-                      </picture>
-                    </div>
-                    <div class="article-card__box">
-                      <div class="article-card__title">Real World $DEFI Utilities, 4,000,000 $DEFI Campaign…</div>
-                      <p class="article-card__except">March was a busy and impactful month for the De.Fi Ecosystem. We…</p>
-                      <div class="article-card__info">
-                        <i class="article-card__icon">
-                          <svg width="48" height="48">
-                            <use href="img/sprite/sprite.svg#icon"></use>
-                          </svg>
-                        </i>
-                        <span class="article-card__sitename">Gamma Prime</span>
-                        <div class="article-card__details">
-                          <time class="article-card__pubtime" datetime="2025-04-01">April 1</time>
-                          <p class="article-card__readtime">4 minutes</p>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
+
+                <div class="article-card__box">
+                  <div class="article-card__title">Using a Honeypot Checker: Keep Your Crypto Safe Across 15+ EVM Chains</div>
+                  <p class="article-card__except">This article will provide you with insights regarding what a honeypot is, why it's dangerous, and how to use our cuttin…</p>
                 </div>
-          
-                <!-- Карточка 5 (повтор карточки 2) -->
-                <div class="swiper-slide">
-                  <a class="article-card" href="/article.html">
-                    <div class="article-card__image">
-                      <picture>
-                        <source type="image/webp" srcset="img/cover.webp">
-                        <img width="356" height="200" src="img/cover.png" alt="article">
-                      </picture>
-                    </div>
-                    <div class="article-card__box">
-                      <div class="article-card__title">Donald Trump Jr. & Kevin O’Leary, $2,500,000 buyba…</div>
-                      <p class="article-card__except">February was filled with major updates, partnerships, and...</p>
-                      <div class="article-card__info">
-                        <i class="article-card__icon">
-                          <svg width="48" height="48">
-                            <use href="img/sprite/sprite.svg#icon"></use>
-                          </svg>
-                        </i>
-                        <span class="article-card__sitename">Gamma Prime</span>
-                        <div class="article-card__details">
-                          <time class="article-card__pubtime" datetime="2025-03-14">March 14</time>
-                          <p class="article-card__readtime">6 minutes</p>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
+              </a>
+            </li>
+
+            <li>
+              <a class="article-card" href="/article.html">
+                <div class="article-card__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/post3.webp">
+                    <img width="356" height="200" src="img/post3.png" alt="article">
+                  </picture>
                 </div>
-          
-                <!-- Карточка 6 (повтор карточки 3) -->
-                <div class="swiper-slide">
-                  <a class="article-card" href="/article.html">
-                    <div class="article-card__image">
-                      <picture>
-                        <source type="image/webp" srcset="img/cover.webp">
-                        <img width="356" height="190" src="img/cover.png" alt="article">
-                      </picture>
-                    </div>
-                    <div class="article-card__box">
-                      <div class="article-card__title">De.Fi World 2025 Recap: Joined by Donald Trump Jr.,…</div>
-                      <p class="article-card__except">On February 26, 2025, we hosted...</p>
-                      <div class="article-card__info">
-                        <i class="article-card__icon">
-                          <svg width="48" height="48">
-                            <use href="img/sprite/sprite.svg#icon"></use>
-                          </svg>
-                        </i>
-                        <span class="article-card__sitename">Gamma Prime</span>
-                        <div class="article-card__details">
-                          <time class="article-card__pubtime" datetime="2025-03-06">March 6</time>
-                          <p class="article-card__readtime">3 minutes</p>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
+
+                <div class="article-card__box">
+                  <div class="article-card__title">Using a Honeypot Checker: Keep Your Crypto Safe Across 15+ EVM Chains</div>
+                  <p class="article-card__except">This article will provide you with insights regarding what a honeypot is, why it's dangerous, and how to use our cuttin…</p>
                 </div>
-              </div>
-            </div>
+              </a>
+            </li>
           </div>
         </div>
       </div>
@@ -330,22 +211,8 @@
                 </div>
 
                 <div class="article-card__box">
-                  <div class="article-card__title">Real World $DEFI Utilities, 4,000,000 $DEFI Campaign with ByBit, Interview with Kevin O’Leary and MORE! – March Development Recap</div>
-
+                  <div class="article-card__title">Using a Honeypot Checker: Keep Your Crypto Safe Across 15+ EVM Chains</div>
                   <p class="article-card__except">This article will provide you with insights regarding what a honeypot is, why it's dangerous, and how to use our cuttin…</p>
-
-                  <div class="article-card__info">
-                    <i class="article-card__icon">
-                      <svg width='48' height='48'>
-                        <use href='img/sprite/sprite.svg#icon'></use>
-                      </svg>
-                    </i>
-                    <span class="article-card__sitename">Gamma Prime</span>
-                    <div class="article-card__details">
-                      <p class="artilce-card__pubtime">July 10</p>
-                      <p class="article-card__readtime">6 minutes</p>
-                    </div>
-                  </div>
                 </div>
               </a>
             </li>
@@ -361,21 +228,7 @@
 
                 <div class="article-card__box">
                   <div class="article-card__title">Using a Honeypot Checker: Keep Your Crypto Safe Across 15+ EVM Chains</div>
-
-                  <p class="article-card__except">In this article, we'll delve into the world of crypto wallets, explaining what they are, how they work, how to choose t…</p>
-
-                  <div class="article-card__info">
-                    <i class="article-card__icon">
-                      <svg width='48' height='48'>
-                        <use href='img/sprite/sprite.svg#icon'></use>
-                      </svg>
-                    </i>
-                    <span class="article-card__sitename">Gamma Prime</span>
-                    <div class="article-card__details">
-                      <time class="article-card__pubtime" datetime="2025-04-01">April 1</time>
-                      <p class="article-card__readtime">12 minutes</p>
-                    </div>
-                  </div>
+                  <p class="article-card__except">This article will provide you with insights regarding what a honeypot is, why it's dangerous, and how to use our cuttin…</p>
                 </div>
               </a>
             </li>
@@ -391,21 +244,7 @@
 
                 <div class="article-card__box">
                   <div class="article-card__title">Using a Honeypot Checker: Keep Your Crypto Safe Across 15+ EVM Chains</div>
-
                   <p class="article-card__except">This article will provide you with insights regarding what a honeypot is, why it's dangerous, and how to use our cuttin…</p>
-
-                  <div class="article-card__info">
-                    <i class="article-card__icon">
-                      <svg width='48' height='48'>
-                        <use href='img/sprite/sprite.svg#icon'></use>
-                      </svg>
-                    </i>
-                    <span class="article-card__sitename">Gamma Prime</span>
-                    <div class="article-card__details">
-                      <time class="article-card__pubtime" datetime="2025-04-01">April 1</time>
-                      <p class="article-card__readtime">6 minutes</p>
-                    </div>
-                  </div>
                 </div>
               </a>
             </li>
@@ -420,22 +259,8 @@
                 </div>
 
                 <div class="article-card__box">
-                  <div class="article-card__title">What Is a DeFi Wallet?</div>
-
-                  <p class="article-card__except">In this article, we'll delve into the world of crypto wallets, explaining what they are, how they work, how to choose t…</p>
-
-                  <div class="article-card__info">
-                    <i class="article-card__icon">
-                      <svg width='48' height='48'>
-                        <use href='img/sprite/sprite.svg#icon'></use>
-                      </svg>
-                    </i>
-                    <span class="article-card__sitename">Gamma Prime</span>
-                    <div class="article-card__details">
-                      <time class="article-card__pubtime" datetime="2025-04-01">April 1</time>
-                      <p class="article-card__readtime">12 minutes</p>
-                    </div>
-                  </div>
+                  <div class="article-card__title">Using a Honeypot Checker: Keep Your Crypto Safe Across 15+ EVM Chains</div>
+                  <p class="article-card__except">This article will provide you with insights regarding what a honeypot is, why it's dangerous, and how to use our cuttin…</p>
                 </div>
               </a>
             </li>
@@ -460,22 +285,8 @@
                 </div>
 
                 <div class="article-card__box">
-                  <div class="article-card__title">Real World $DEFI Utilities, 4,000,000 $DEFI Campaign…</div>
-
-                  <p class="article-card__except">March was a busy and impactful month for the De.Fi Ecosystem. We…</p>
-
-                  <div class="article-card__info">
-                    <i class="article-card__icon">
-                      <svg width='48' height='48'>
-                        <use href='img/sprite/sprite.svg#icon'></use>
-                      </svg>
-                    </i>
-                    <span class="article-card__sitename">Gamma Prime</span>
-                    <div class="article-card__details">
-                      <time class="article-card__pubtime" datetime="2025-04-01">April 1</time>
-                      <p class="article-card__readtime">4 minutes</p>
-                    </div>
-                  </div>
+                  <div class="article-card__title">Using a Honeypot Checker: Keep Your Crypto Safe Across 15+ EVM Chains</div>
+                  <p class="article-card__except">This article will provide you with insights regarding what a honeypot is, why it's dangerous, and how to use our cuttin…</p>
                 </div>
               </a>
             </li>
@@ -490,22 +301,8 @@
                 </div>
 
                 <div class="article-card__box">
-                  <div class="article-card__title">Real World $DEFI Utilities, 4,000,000 $DEFI Campaign…</div>
-
-                  <p class="article-card__except">March was a busy and impactful month for the De.Fi Ecosystem. We…</p>
-
-                  <div class="article-card__info">
-                    <i class="article-card__icon">
-                      <svg width='48' height='48'>
-                        <use href='img/sprite/sprite.svg#icon'></use>
-                      </svg>
-                    </i>
-                    <span class="article-card__sitename">Gamma Prime</span>
-                    <div class="article-card__details">
-                      <time class="article-card__pubtime" datetime="2025-04-01">April 1</time>
-                      <p class="article-card__readtime">4 minutes</p>
-                    </div>
-                  </div>
+                  <div class="article-card__title">Using a Honeypot Checker: Keep Your Crypto Safe Across 15+ EVM Chains</div>
+                  <p class="article-card__except">This article will provide you with insights regarding what a honeypot is, why it's dangerous, and how to use our cuttin…</p>
                 </div>
               </a>
             </li>
@@ -520,22 +317,8 @@
                 </div>
 
                 <div class="article-card__box">
-                  <div class="article-card__title">Real World $DEFI Utilities, 4,000,000 $DEFI Campaign…</div>
-
-                  <p class="article-card__except">March was a busy and impactful month for the De.Fi Ecosystem. We…</p>
-
-                  <div class="article-card__info">
-                    <i class="article-card__icon">
-                      <svg width='48' height='48'>
-                        <use href='img/sprite/sprite.svg#icon'></use>
-                      </svg>
-                    </i>
-                    <span class="article-card__sitename">Gamma Prime</span>
-                    <div class="article-card__details">
-                      <time class="article-card__pubtime" datetime="2025-04-01">April 1</time>
-                      <p class="article-card__readtime">4 minutes</p>
-                    </div>
-                  </div>
+                  <div class="article-card__title">Using a Honeypot Checker: Keep Your Crypto Safe Across 15+ EVM Chains</div>
+                  <p class="article-card__except">This article will provide you with insights regarding what a honeypot is, why it's dangerous, and how to use our cuttin…</p>
                 </div>
               </a>
             </li>
@@ -550,22 +333,8 @@
                 </div>
 
                 <div class="article-card__box">
-                  <div class="article-card__title">Real World $DEFI Utilities, 4,000,000 $DEFI Campaign…</div>
-
-                  <p class="article-card__except">March was a busy and impactful month for the De.Fi Ecosystem. We…</p>
-
-                  <div class="article-card__info">
-                    <i class="article-card__icon">
-                      <svg width='48' height='48'>
-                        <use href='img/sprite/sprite.svg#icon'></use>
-                      </svg>
-                    </i>
-                    <span class="article-card__sitename">Gamma Prime</span>
-                    <div class="article-card__details">
-                      <time class="article-card__pubtime" datetime="2025-04-01">April 1</time>
-                      <p class="article-card__readtime">4 minutes</p>
-                    </div>
-                  </div>
+                  <div class="article-card__title">Using a Honeypot Checker: Keep Your Crypto Safe Across 15+ EVM Chains</div>
+                  <p class="article-card__except">This article will provide you with insights regarding what a honeypot is, why it's dangerous, and how to use our cuttin…</p>
                 </div>
               </a>
             </li>
@@ -580,22 +349,8 @@
                 </div>
 
                 <div class="article-card__box">
-                  <div class="article-card__title">Real World $DEFI Utilities, 4,000,000 $DEFI Campaign…</div>
-
-                  <p class="article-card__except">March was a busy and impactful month for the De.Fi Ecosystem. We…</p>
-
-                  <div class="article-card__info">
-                    <i class="article-card__icon">
-                      <svg width='48' height='48'>
-                        <use href='img/sprite/sprite.svg#icon'></use>
-                      </svg>
-                    </i>
-                    <span class="article-card__sitename">Gamma Prime</span>
-                    <div class="article-card__details">
-                      <time class="article-card__pubtime" datetime="2025-04-01">April 1</time>
-                      <p class="article-card__readtime">4 minutes</p>
-                    </div>
-                  </div>
+                  <div class="article-card__title">Using a Honeypot Checker: Keep Your Crypto Safe Across 15+ EVM Chains</div>
+                  <p class="article-card__except">This article will provide you with insights regarding what a honeypot is, why it's dangerous, and how to use our cuttin…</p>
                 </div>
               </a>
             </li>
@@ -610,22 +365,8 @@
                 </div>
 
                 <div class="article-card__box">
-                  <div class="article-card__title">Real World $DEFI Utilities, 4,000,000 $DEFI Campaign…</div>
-
-                  <p class="article-card__except">March was a busy and impactful month for the De.Fi Ecosystem. We…</p>
-
-                  <div class="article-card__info">
-                    <i class="article-card__icon">
-                      <svg width='48' height='48'>
-                        <use href='img/sprite/sprite.svg#icon'></use>
-                      </svg>
-                    </i>
-                    <span class="article-card__sitename">Gamma Prime</span>
-                    <div class="article-card__details">
-                      <time class="article-card__pubtime" datetime="2025-04-01">April 1</time>
-                      <p class="article-card__readtime">4 minutes</p>
-                    </div>
-                  </div>
+                  <div class="article-card__title">Using a Honeypot Checker: Keep Your Crypto Safe Across 15+ EVM Chains</div>
+                  <p class="article-card__except">This article will provide you with insights regarding what a honeypot is, why it's dangerous, and how to use our cuttin…</p>
                 </div>
               </a>
             </li>
@@ -640,22 +381,8 @@
                 </div>
 
                 <div class="article-card__box">
-                  <div class="article-card__title">Real World $DEFI Utilities, 4,000,000 $DEFI Campaign…</div>
-
-                  <p class="article-card__except">March was a busy and impactful month for the De.Fi Ecosystem. We…</p>
-
-                  <div class="article-card__info">
-                    <i class="article-card__icon">
-                      <svg width='48' height='48'>
-                        <use href='img/sprite/sprite.svg#icon'></use>
-                      </svg>
-                    </i>
-                    <span class="article-card__sitename">Gamma Prime</span>
-                    <div class="article-card__details">
-                      <time class="article-card__pubtime" datetime="2025-04-01">April 1</time>
-                      <p class="article-card__readtime">4 minutes</p>
-                    </div>
-                  </div>
+                  <div class="article-card__title">Using a Honeypot Checker: Keep Your Crypto Safe Across 15+ EVM Chains</div>
+                  <p class="article-card__except">This article will provide you with insights regarding what a honeypot is, why it's dangerous, and how to use our cuttin…</p>
                 </div>
               </a>
             </li>
@@ -670,22 +397,8 @@
                 </div>
 
                 <div class="article-card__box">
-                  <div class="article-card__title">Real World $DEFI Utilities, 4,000,000 $DEFI Campaign…</div>
-
-                  <p class="article-card__except">March was a busy and impactful month for the De.Fi Ecosystem. We…</p>
-
-                  <div class="article-card__info">
-                    <i class="article-card__icon">
-                      <svg width='48' height='48'>
-                        <use href='img/sprite/sprite.svg#icon'></use>
-                      </svg>
-                    </i>
-                    <span class="article-card__sitename">Gamma Prime</span>
-                    <div class="article-card__details">
-                      <time class="article-card__pubtime" datetime="2025-04-01">April 1</time>
-                      <p class="article-card__readtime">4 minutes</p>
-                    </div>
-                  </div>
+                  <div class="article-card__title">Using a Honeypot Checker: Keep Your Crypto Safe Across 15+ EVM Chains</div>
+                  <p class="article-card__except">This article will provide you with insights regarding what a honeypot is, why it's dangerous, and how to use our cuttin…</p>
                 </div>
               </a>
             </li>
@@ -700,22 +413,8 @@
                 </div>
 
                 <div class="article-card__box">
-                  <div class="article-card__title">Real World $DEFI Utilities, 4,000,000 $DEFI Campaign…</div>
-
-                  <p class="article-card__except">March was a busy and impactful month for the De.Fi Ecosystem. We…</p>
-
-                  <div class="article-card__info">
-                    <i class="article-card__icon">
-                      <svg width='48' height='48'>
-                        <use href='img/sprite/sprite.svg#icon'></use>
-                      </svg>
-                    </i>
-                    <span class="article-card__sitename">Gamma Prime</span>
-                    <div class="article-card__details">
-                      <time class="article-card__pubtime" datetime="2025-04-01">April 1</time>
-                      <p class="article-card__readtime">4 minutes</p>
-                    </div>
-                  </div>
+                  <div class="article-card__title">Using a Honeypot Checker: Keep Your Crypto Safe Across 15+ EVM Chains</div>
+                  <p class="article-card__except">This article will provide you with insights regarding what a honeypot is, why it's dangerous, and how to use our cuttin…</p>
                 </div>
               </a>
             </li>
@@ -799,7 +498,6 @@
 
 <div class="overlay fixed-block" data-overlay></div>
 
-  <script src="js/swiper.js" defer></script>
   <script defer src="js/main.js"></script>
 </body>
 

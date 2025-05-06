@@ -1,0 +1,21 @@
+.back-link {
+    margin-bottom: 24px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 20px;
+    line-height: normal;
+    font-weight: 500;
+    color: var(--cl-d);
+    transition: all 0.3s ease;
+
+    svg {
+        stroke: currentColor;
+    }
+
+    &:hover,
+    &:active {
+        color: var(--cl-a);
+    }
+}

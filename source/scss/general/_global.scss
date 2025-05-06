@@ -17,7 +17,7 @@ body {
   flex-direction: column;
   will-change: font-size;
   background-color: var(--body-bg);
-  font-family: var(--font-family);
+  font-family: var(--font-dmsans);
   font-size: var(--body-font-size);
   font-style: normal;
   font-weight: 400;
@@ -105,7 +105,7 @@ button,
 p {
   margin: 0;
   padding: 0;
-  font-family: var(--font-family);
+  font-family: var(--font-dmsans);
   font-style: normal;
 }
 

@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 10px;
+    gap: 23px;
 
     &__image {
         display: flex;
@@ -15,7 +15,7 @@
         flex-shrink: 0;
 
         @include for-tablet {
-            height: 200px;
+            height: 218px;
         }
 
         @include for-small-tablet {
@@ -41,7 +41,18 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: clamp(15px, 2.148vw, 22px);
+        gap: 10px;
+    }
+
+    &__tag {
+        font-size: 20px;
+        line-height: 150%;
+        font-weight: 500;
+        color: var(--cl-d);
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
     }
 
     &__title {
@@ -50,66 +61,20 @@
         line-height: 133%;
         font-weight: 700;
         color: var(--cl-a);
-        background: radial-gradient(100% 65% at 50% 50%, #FFF 30%, rgba(255, 255, 255, 0.40) 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         overflow: hidden;
         display: -webkit-box;
-        -webkit-line-clamp: 2;
+        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
     }
 
     &__except {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 150%;
         font-weight: 500;
-        color: var(--cl-a);
+        color: rgba(255, 255, 255, 0.6);
         overflow: hidden;
         display: -webkit-box;
-        -webkit-line-clamp: 2;
+        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
-    }
-
-    &__info {
-        display: grid;
-        grid-template-columns: 48px auto;
-        align-items: center;
-        gap: 0 16px;
-    }
-
-    &__icon {
-        grid-row: span 2;
-        display: flex;
-    }
-
-    &__sitename {
-        font-size: 16px;
-        line-height: 150%;
-        font-weight: 500;
-        color: var(--cl-d);
-    }
-
-    &__details {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        font-size: 16px;
-        line-height: 150%;
-        font-weight: 400;
-        color: var(--cl-a);
-    }
-
-    &__readtime {
-        position: relative;
-
-        &::before {
-            content: '•';
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            left: -13px;
-            color: var(--cl-a);
-        }
     }
 }

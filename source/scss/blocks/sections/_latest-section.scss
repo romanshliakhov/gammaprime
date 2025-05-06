@@ -1,48 +1,17 @@
 .latest-section {
-    padding: clamp(15px, 6.836vw, 70px) 0 70px;
     position: relative;
 
-    &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: clamp(15px, 6.836vw, 70px);
-        width: 218px;
-        height: 400px;
-        background: rgba(57, 202, 136, 0.28);
-        filter: blur(105.25px);
-        z-index: -1;
-
-        @include mobile {
-            bottom: initial;
-            top: 0;
-        }
-    }
-
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: clamp(15px, 6.836vw, 70px);
-        right: 0;
-        background: rgba(57, 202, 136, 0.28);
-        filter: blur(105.25px);
-        width: 218px;
-        height: 400px;
-        z-index: -1;
-
-        @include mobile {
-            bottom: 70px;
-            width: 176px;
-            height: 130px;
-            background: rgba(57, 202, 136, 0.2);
-            filter: blur(47.0275993347168px);
-        }
-    }
-
     &__wrapp {
+        padding: 34px 0 clamp(40px, 4.492vw, 46px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         display: flex;
         flex-direction: column;
-        gap: clamp(10px, 4.297vw, 44px);
+        gap: 36px;
+
+        @include mobile {
+            padding-top: 40px;
+            gap: 40px;
+        }
     }
 
     &__top {
@@ -54,8 +23,8 @@
     &__title {
         font-size: clamp(24px, 3.125vw, 32px);
         line-height: 140%;
-        font-weight: 500;
-        color: var(--cl-d);
+        font-weight: 700;
+        color: var(--cl-a);
     }
 
     &__controls {
@@ -64,48 +33,17 @@
         gap: 10px;
     }
 
-    &__slider {
-        width: 100%;
-        overflow: hidden;
-    }
+    &__items {
+        display: grid;
+        gap: 24px 22px;
 
-    .swiper {
-        width: calc(100% + (var(--container-offset) * 2));
-        margin: 0 calc(var(--container-offset) * -1);
-
-        .swiper-container {
-            padding: 0 var(--container-offset);
-        }
-        
-        &-slide {
-            width: 100%;
-            height: initial;
+        @include for-tablet {
+            grid-template-columns: repeat(3, 1fr);
         }
 
-        &-container{
-            width: 100%;
-        }
-
-        &-btn {
-            width: clamp(28px, 3.125vw, 32px);
-            height: clamp(28px, 3.125vw, 32px);
-            background-color: var(--bg-c);
-            color: var(--cl-b);
-            transition: all 0.3s ease;
-
-            &.swiper-button-prev {
-                svg {
-                    transform: scale(-1);
-                }
-            }
-
-            svg {
-                fill: currentColor;
-            }
-
-            &:hover,
-            &:active {
-                background-color: var(--bg-a);
+        @include tablet {
+            @include for-small-tablet {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     }

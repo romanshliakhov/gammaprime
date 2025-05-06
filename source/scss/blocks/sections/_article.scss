@@ -1,63 +1,13 @@
 .article {
     position: relative;
-    padding: clamp(15px, 5.645vw, 70px) 0 clamp(55px, 5.645vw, 70px);
-
-    &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: clamp(15px, 4.861vw, 70px);
-        width: 218px;
-        height: 870px;
-        background: rgba(57, 202, 136, 0.28);
-        filter: blur(105.25px);
-        z-index: -1;
-
-        @include mobile {
-            width: 176px;
-            height: 130px;
-            background: rgba(57, 202, 136, 0.2);
-            filter: blur(47.0275993347168px);
-        }
-    }
-
-    &::after {
-        content: '';
-        position: absolute;
-        right: 0;
-        top: clamp(15px, 4.861vw, 70px);
-        width: 218px;
-        height: 870px;
-        background: rgba(57, 202, 136, 0.28);
-        filter: blur(105.25px);
-        z-index: -1;
-
-        @include mobile {
-            display: none;
-        }
-    }
-
-    &__top {
-        display: grid;
-        grid-template-columns: 100%;
-        align-items: center;
-        gap: 20px;
-
-        @include for-small-tablet {
-            margin-bottom: 26px;
-        }
-    }
+    padding-top: 40px;
 
     &__title {
-        width: fit-content;
-        font-size: clamp(24px, 3.516vw, 36px);
-        line-height: 133%;
+        max-width: 658px;
+        font-size: clamp(40px, 4.688vw, 48px);
+        line-height: normal;
         font-weight: 700;
         color: var(--cl-a);
-        background: radial-gradient(100% 65% at 50% 50%, #FFF 30%, rgba(255, 255, 255, 0.40) 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
 
     &__box {
@@ -65,33 +15,12 @@
         padding: 24px 0 55px;
         display: grid;
         align-items: flex-start;
-        gap: 24px clamp(24px, 3.629vw, 45px);
-        border-bottom: 1px solid var(--br-a);
+        gap: 40px clamp(24px, 3.629vw, 45px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
         @include for-small-tablet {
             grid-template-columns: clamp(288px, 31.29vw, 388px) 1fr;
         }
-    }
-
-    &__divider {
-        grid-column: 1 / -1;
-        padding: 13.5px 0;
-        border-top: 1px solid var(--br-c);
-        border-bottom: 1px solid var(--br-c);
-
-        @include for-small-tablet {
-            padding: 13.5px 21px;
-        }
-    }
-
-    &__likes {
-        display: flex;
-        align-items: center;
-        gap: 2px;
-        font-size: 12px;
-        line-height: 100%;
-        font-weight: 500;
-        color: var(--cl-d);
     }
 
     &__thumbnails {
@@ -109,6 +38,7 @@
 
         @include small-tablet {
             order: -1;
+            margin-bottom: 16px;
         }
 
         picture, 
@@ -119,9 +49,18 @@
         }
     }
 
+    &__box-left {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+
+        @include for-small-tablet {
+            position: sticky;
+            top: 20px;
+        }
+    }
+
     &__aside {
-        position: sticky;
-        top: 20px;
         padding: clamp(15px, 2.984vw, 37px) clamp(15px, 2.419vw, 30px) clamp(15px, 3.468vw, 43px);
         background: rgba(255, 255, 255, 0.00);
         border: 1px solid var(--br-b);
@@ -131,10 +70,6 @@
         display: flex;
         flex-direction: column;
         gap: clamp(15px, 2.016vw, 25px);
-
-        @include small-tablet {
-            display: none;
-        }
 
         &-title {
             font-size: clamp(20px, 1.935vw, 24px);
@@ -154,6 +89,41 @@
         }
     }
 
+    &__box-socials {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+
+        span {
+            font-size: 20px;
+            line-height: normal;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: #fff;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+    
+            a {
+                display: flex;
+                transition: all 0.3s ease;
+    
+                svg {
+                    fill: transparent;
+                }
+    
+                &:hover {
+                    svg {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+
     &__content {
         display: flex;
         flex-direction: column;
@@ -166,13 +136,18 @@
             font-size: 28px;
             line-height: 114%;
             font-weight: 700;
-            background: radial-gradient(100% 65% at 50% 50%, #FFF 30%, rgba(255, 255, 255, 0.40) 100%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            margin-top: 16px;
+
+            &:first-of-type {
+                margin-top: 0;
+            }
         }
 
         h3 {
+            margin-top: 16px;
             font-size: 24px;
             line-height: 114%;
             font-weight: 700;

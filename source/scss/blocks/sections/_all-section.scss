@@ -1,57 +1,39 @@
 .all-section {
-    padding: clamp(30px, 6.836vw, 70px) 0 70px;
     position: relative;
 
-    &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: clamp(30px, 6.836vw, 70px);
-        width: 218px;
-        height: 615px;
-        background: rgba(57, 202, 136, 0.28);
-        filter: blur(105.25px);
-        z-index: -1;
+    &--category {
+        .all-section__wrapp {
+            padding: clamp(40px, 5.469vw, 56px) 0;
+            gap: clamp(40px, 5.469vw, 56px);
+        }
 
-        @include mobile {
-            bottom: initial;
-            top: 0;
-            height: 400px;
+        .load-more {
+            padding-top: clamp(40px, 5.469vw, 56px);
         }
     }
-
-    &::after {
-        content: '';
-        position: absolute;
-        right: 0;
-        bottom: clamp(30px, 6.836vw, 70px);
-        width: 218px;
-        height: 615px;
-        background: rgba(57, 202, 136, 0.28);
-        filter: blur(105.25px);
-        z-index: -1;
-        
-        @include mobile {
-            display: none;
-        }
-    }
-
+    
     &__wrapp {
+        padding: 34px 0 clamp(40px, 4.492vw, 46px);
         display: flex;
         flex-direction: column;
-        gap: clamp(10px, 4.297vw, 44px);
+        gap: 36px;
+
+        @include mobile {
+            padding-top: 40px;
+            gap: 40px;
+        }
     }
 
     &__title {
         font-size: clamp(24px, 3.125vw, 32px);
         line-height: 140%;
         font-weight: 500;
-        color: var(--cl-d);
+        color: var(--cl-a);
     }
 
     &__items {
         display: grid;
-        gap: 40px clamp(30px, 4.032vw, 50px);
+        gap: clamp(24px, 3.516vw, 36px) 20px;
 
         @include for-tablet {
             grid-template-columns: repeat(3, 1fr);
@@ -60,16 +42,6 @@
         @include tablet {
             @include for-small-tablet {
                 grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @include mobile {
-            li {
-                display: none;
-            }
-            
-            li:nth-child(-n+6) {
-                display: list-item;
             }
         }
     }

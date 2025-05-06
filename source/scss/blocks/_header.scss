@@ -11,8 +11,8 @@
     }
 
     &__wrapp {
-        padding: clamp(12px, 2.823vw, 35px) 0 clamp(12px, 3.387vw, 42px);
-        border-bottom: 1px solid var(--br-a);
+        padding: clamp(16px, 3.32vw, 34px) 0 clamp(16px, 3.027vw, 31px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
         display: flex;
         align-items: center;
@@ -28,7 +28,7 @@
     &__box {
         display: flex;
         align-items: center;
-        gap: 50px;
+        gap: clamp(20px, 2.604vw, 50px);
 
         @include for-small-tablet {
             flex-grow: 1;
@@ -62,6 +62,10 @@
                 line-height: 100%;
                 font-weight: 400;
                 color:  var(--cl-a);
+
+                &.active {
+                    color: var(--cl-d);
+                }
     
                 i {
                     padding: 4px;
@@ -89,6 +93,12 @@
                 line-height: 100%;
                 font-weight: 700;
                 color:  var(--cl-a);
+
+                // new style start
+                &.active {
+                    color: var(--cl-d);
+                }
+                // new style end
     
                 i {
                     padding: 4px;
